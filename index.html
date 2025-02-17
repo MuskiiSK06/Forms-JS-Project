@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms Html DOM</title>
+</head>
+<body>
+    <div class="container">
+      <form id="form" action="submit.html">
+        <div class="heading">
+            <h1>REGISTRATION FORM</h1>
+        </div>
+
+        <div class="input-Control">
+            <label for="student-name">Student Name</label>
+            <input id="student-name" name="first" placeholder="First Name" type="text" required>
+            <input id="student-name" name="last" placeholder="Last Name" type="text" required>
+            <div class="error"></div>
+        </div>
+
+        <div class="input-Control">
+           <label>Gender</label>
+           <select id="gender">
+            <option>--Please Select--</option>
+            <option>Male</option>
+            <option>Female</option>
+           </select required>
+           <div class="error"></div>
+        </div>
+
+        <div class="input-Control">
+            <label for="email">Student E-mail ID</label>
+            <input id="email" name="email" placeholder="E-mail ID" type="email" required>
+            <div class="error"></div>
+        </div>
+        
+        <div class="input-Control">
+            <label for="classes-list">List of Classes</label>
+            <select id="classes-list">
+                <option>--Please Select--</option>
+                <option>B.Sc</option>
+                <option>B.Com</option>
+                <option>B.Arts</option>
+                <option>Business Management</option>
+                <option>Computer Science</option>
+                <option>Political Science</option>
+                <option>Personal Finance</option>
+                <option>Design and Art</option>
+                <option>Journalism or writing</option>
+            </select required>
+            <div class="error"></div>
+        </div>
+
+        <div class="input-Control">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" placeholder="Enter Phone Number" type="tel" required>
+            <div class="error"></div>
+        </div>
+
+        <button onclick="validate()">SUBMIT</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
